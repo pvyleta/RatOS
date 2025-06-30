@@ -17,7 +17,9 @@
 [pi0]
 ## This affects Pi Zero(W) and Pi Zero2
 ## Due lag of RAM, limit GPU RAM
-gpu_mem=128
+# Lowered as we are runnign headless and we desperately need the RAM
+# gpu_mem=128 #
+gpu_mem=16
 
 [pi02]
 dtoverlay=vc4-kms-v3d
